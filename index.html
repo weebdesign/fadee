@@ -8,7 +8,7 @@
 <script type="text/javascript" src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js">
 
 </script>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <style>
         *{
     margin: 0;
@@ -18,7 +18,7 @@
     text-decoration: none;
 }
 body{
-    background: blue;
+    background:blue;
 }
 .container{
     padding: 10%;
@@ -27,6 +27,10 @@ body{
     margin: 0
     auto;
     background-color: blue;
+}
+.data input,select{
+    display: block;
+    margin:10px;
 }
 .table_top{
     display:flex;
@@ -140,14 +144,7 @@ input:hover{
              <button id="btn_ex" onclick="exportTableToExcel('myTable', 'table_data')" >Convert to xlsx</button>
         </div><br><br>
         <table border="1" id="table">
-            <div class="table_top">
-                 <p id="desi">Name:<br>
-                    Designation:
-                 </p> 
-                 <p id="desi">Name:<br>
-                    Designation:
-                 </p>
-            </div>
+         
             
             <tr>
 
